@@ -83,7 +83,16 @@ local config = {
     --
 
     init = {
-    { 'michaelb/sniprun', run = 'bash ./install.sh'},
+    { 'michaelb/sniprun', run = 'bash ./install.sh',
+    config = function()
+      require('sniprun').setup{
+        display = {"NvimNotify"},
+        display_options = {
+          notification_timeout = 400   -- timeout for nvim_notify output
+        },
+      }
+    end,
+    }
     -- colorschemes
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
@@ -159,7 +168,7 @@ local config = {
       },
       v = {
         ["<leader>"] = {
-          ["R"] = { ":SnipRun<cr>", "Run Selected Code" },
+          ["r"] = { ":SnipRun<cr>", "Run Selected Code" },
         },
       }
     },
