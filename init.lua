@@ -80,7 +80,11 @@ local config = {
   -- Configure plugins
   plugins = {
     -- Add plugins, the packer syntax without the "use"
+    --
+
     init = {
+    { 'michaelb/sniprun', run = 'bash ./install.sh'},
+    -- colorschemes
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
 
@@ -150,8 +154,14 @@ local config = {
         ["<leader>"] = {
           -- which-key registration table for normal mode, leader prefix
           -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
+          ["r"] = { "ggVG:SnipRun<cr>", "Run Code" },
         },
       },
+      v = {
+        ["<leader>"] = {
+          ["R"] = { ":SnipRun<cr>", "Run Selected Code" },
+        },
+      }
     },
   },
 
