@@ -88,7 +88,7 @@ local config = {
       require('sniprun').setup{
         display = {"NvimNotify"},
         display_options = {
-          notification_timeout = 400   -- timeout for nvim_notify output
+          notification_timeout = 4   -- timeout for nvim_notify output
         },
       }
     end,
@@ -169,6 +169,12 @@ local config = {
       v = {
         ["<leader>"] = {
           ["r"] = { ":SnipRun<cr>", "Run Selected Code" },
+        },
+      },
+      n = {
+        ["<leader>"] = {
+          ["n"] = { ":set nonumber norelativenumber<cr>", "Disable line numbers" },
+          ["N"] = { ":set number relativenumber<cr>", "Enable line numbers" },
         },
       }
     },
