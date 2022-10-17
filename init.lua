@@ -298,6 +298,8 @@ local config = {
           -- which-key registration table for normal mode, leader prefix
           -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
           ["r"] = { "ggVG:SnipRun<cr>", "Run Code" },
+          ["n"] = { ":set nonumber norelativenumber<cr>", "Disable line numbers" },
+          ["N"] = { ":set number relativenumber<cr>", "Enable line numbers" },
         },
       },
       v = {
@@ -305,12 +307,6 @@ local config = {
           ["r"] = { ":SnipRun<cr>", "Run Selected Code" },
         },
       },
-      n = {
-        ["<leader>"] = {
-          ["n"] = { ":set nonumber norelativenumber<cr>", "Disable line numbers" },
-          ["N"] = { ":set number relativenumber<cr>", "Enable line numbers" },
-        },
-      }
     },
   },
 
