@@ -8,6 +8,6 @@ git clone https://github.com/youcef4k/astronvim user
 cp user/gruvbox.vim ~/.config/nvim/colors
 nvim
 :PackerSync
-TSInstall cpp python lua vim json cmake bash
+:TSInstall cpp python lua vim json cmake bash
 :LspInstall pyright, sourcery, clangd, bashls, sumneko_lua, grammarly, cmake, jsonls, vimls, astro
 ```
