@@ -1,7 +1,7 @@
 # astronvim
 
 ## Setup 
-```console
+```bash
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 cd ~/.config/nvim/lua
 git clone https://github.com/youcef4k/astronvim user
