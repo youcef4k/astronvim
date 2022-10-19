@@ -26,7 +26,8 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "default_theme",
+  colorscheme = "gruvbox",
+  -- colorscheme = "default_theme",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -173,6 +174,11 @@ local config = {
       --     },
       --   },
       -- },
+      sourcery = {
+        init_options = {
+          token = "user_1QAAc2lxe_5Zheiq0_VAFXD8Ey_Ty6UvxaZ7e8_cFvQe3dbz5ZcswoBJreE"
+        }
+      }
     },
   },
 
